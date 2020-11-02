@@ -1,0 +1,422 @@
+/* BODY START*/
+  body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FEF9ED;
+    margin: 0px;
+    border: 1px solid #A0C658;
+
+    color: #3B3B3B;
+  }
+  header {
+      margin: 0px;
+  }
+/* BODY END*/
+
+  /* NAVBAR START*/
+#homeLink{
+    outline-style: solid;
+    outline-width: 1px;
+
+}
+  .navbarContainer {
+      display: flex;
+      padding-top: 0;
+      background-color: rgba(234, 233, 235, 0.5);
+      margin:0;
+      width: 100vw;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      z-index:1;
+      padding:10px;
+  }
+  nav {
+      display: contents;
+  }
+  nav ul {
+      list-style-type: none;
+      display: flex;
+      color: #3B3B3B;
+      margin-left: auto;
+  }
+  .navListItem {
+      color: #3B3B3B;
+      font-family: 'Red Hat Text', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 16px;
+      margin-right: 1em;
+      transition-duration: 0.2s;
+      background-color: blu;
+  }
+  nav a:hover {
+      background-color: ;
+      color: #F0D07E;
+      height: 100%;
+  }
+  #homeLink {
+      font-family: 'Red Hat Text', sans-serif;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 22px;
+      text-decoration: none;
+      padding: 16px;
+      margin-left: 1em;
+      color:#20124D;
+      border: blue;
+  }
+  .buttonLT:hover{
+      background-color: rgba(191, 170, 239);
+      box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  .buttonLT{
+      background-color:#F4DFB8;
+      color:#20124D;
+      border-radius: 8px;
+      border:none;
+      display:inline-block;
+      text-decoration:none;
+      text-align:center;
+      box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.15);
+      padding:16px;
+      font-family: 'Red Hat Text', sans-serif;
+      line-height:100%;
+      transition-duration:0.3s;
+  }
+/* HAMBURGER MENU START*/
+#hamMenuPic {
+width: 20px;
+height: 20px;
+}
+#dropDown {
+  display: none;
+}
+#toggle {
+  background-color: #FF6767;
+  padding: 15px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+ul #dropdown {
+  margin:0;
+  padding: 0;
+  list-style-type:none;
+}
+li #hidden{
+  margin:0;
+  padding: 15px;
+  border: 1px solid black;
+}
+img {
+  width: 18px;
+}
+.hamburgerMenu {
+  width:
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Open Sans", helvetica, sans-serif;
+}
+/* HAMBURGER MENU END*/
+  /* NAVBAR END*/
+
+  /* PRELOAOD START */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+     "preload preload preload preload"
+    "loadingBar loadingBar loadingBar";
+
+  }
+  .gridChild {
+    margin: 15px;
+    padding: 15px;
+    height: 200px;
+  }
+  .preload {
+    grid-area: preload;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+  }
+  .spinMe {
+    animation: spin 2s infinite;
+    max-height: 150px;
+    max-width: 200px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 220px;
+    top: 14px;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(180deg);
+    }
+    to {
+      transform: rotate(-180deg);
+    }
+  }
+/* PRELOAOD END */
+
+
+/* SAMPLE SECTION START*/
+
+/* SAMPLE SECTION END*/
+
+.box1 {
+  float: left;
+  background: blu;
+  height: 225px;
+  width: 225px;
+  padding: 0%;
+  margin-top: 0%;
+  margin-right: auto;
+  margin-bottom: %;
+  margin-left: 8%;
+  background-image: url("../images/heroImage1.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box2 {
+  float: right;
+  position: relative;
+  background: lightblu;
+  height: 200px;
+  width: 750px;
+  padding: 2%;
+  margin: 0%;
+  text-align: left;
+}
+/* CFGI Section Start */
+#outerCFGI {
+  position:relative;
+  top: 0;
+  left:0;
+  width: 40%;
+  height: 2%;
+  background: lightblu;
+  padding: 12%;
+  margin: 15%;
+  background-image: url("../images/OrangeRec1.png");
+}
+ #CFGItext {
+   position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(0%) translateY(0%);
+    color: #FAF9F8;
+}
+ #CFGItext1 {
+  position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(0%) translateY(150%);
+   color: #FAF9F8;
+}
+#CFGItextBottom{
+  position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-07%) translateY(1400%);
+   color: #FAF9F8;
+}
+
+#innerCFGI {
+  position: absolute;
+   top: 0%;
+   left: 80%;
+   transform: translateX(-155%) translateY(8%);
+   width: 599px;
+   height: 298px;
+   background-image: url("../images/Macbook.png");
+   background-repeat: no-repeat;
+   background-color: blu;
+}
+/* CFGI Section End */
+
+/* CPA Section Start */
+#outerCPA {
+  position:relative;
+  top: 0;
+  left:0;
+  width: 40%;
+  height: 2%;
+  background: lightblu;
+  padding: 12%;
+  margin: 15%;
+  background-image: url("../images/GreenRec1.png");
+}
+ #CPAtext {
+   position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-185%) translateY(0%);
+    color: #3B3B3B;
+}
+ #CPAtext1 {
+  position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-110%) translateY(150%);
+   color: #3B3B3B;
+}
+#CPAtextBottom{
+  position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-90%) translateY(1400%);
+   color: #3B3B3B;
+}
+
+#innerCPA {
+  position: absolute;
+   top: 0%;
+   left: 80%;
+   transform: translateX(-55%) translateY(8%);
+   width: 540px;
+   height: 389px;
+   background-image: url("../images/iMac.png");
+   background-repeat: no-repeat;
+   background-color: blu;
+}
+/* CPA Section End */
+
+/* Cubby Section Start */
+#outerCubby {
+  position:relative;
+  top: 0;
+  left:0;
+  width: 40%;
+  height: 2%;
+  background: lightblu;
+  padding: 12%;
+  margin: 15%;
+  background-image: url("../images/BlueRec1.png");
+}
+ #Cubbytext {
+   position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-20%) translateY(0%);
+    color: #FAF9F8;
+}
+ #Cubbytext1 {
+   position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-10%) translateY(150%);
+    color: #FAF9F8;
+}
+#CubbytextBottom{
+  position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-10%) translateY(1400%);
+   color: #FAF9F8;
+}
+
+#innerCubby {
+  position: absolute;
+   top: 0%;
+   left: 80%;
+   transform: translateX(-256%) translateY(-18%);
+   width: 296px;
+   height: 497px;
+   background-image: url("../images/Cubby_iPhone.png");
+   background-repeat: no-repeat;
+   background-color: blu;
+}
+/* Cubby Section End */
+
+/* CONTACT ME START */
+
+.contactMeSection {
+  display:flex;
+  flex-direction: column;
+   align-items: center;
+  height: 100px;
+  border: 8px solid gree;
+}
+.contactMeButton {
+
+}
+.animate {
+
+}
+#contactMeButton {
+    width: 85px;
+    height: 25px;
+    justify-content: center;
+}
+#contactMeButton:hover{
+    background-color: #A0C658;
+    box-shadow: 4px 4px 12px rgba(32, 18, 77, 0.6);
+    border-radius: 0px;
+}
+
+/* CONTACT ME END */
+
+
+/* FOOTER START*/
+.footer{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 160px;
+    margin-bottom: 0px;
+    width: 98vw;
+    height: 10em;
+    background-color: #FEF9ED;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    padding: 1em 0em;
+    color:#363636;
+}
+#RHP{
+    color: #20124D;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+    margin-top: 2em;
+}
+
+#social-li {
+    width: 32px;
+    height: 32px;
+}
+#social-li img{
+    width: 100%;
+}
+.social:hover{
+    background-color: white;
+    box-shadow: 1px 1px 6px rgba(32, 18, 77, 0.6);
+    border-radius: 8px;
+}
+
+/* FOOTER  END*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%
+    grid-template-areas:
+    grid-template-rows: 100px 300px;
+    grid-template-columns: auto auto auto auto;
+  }
